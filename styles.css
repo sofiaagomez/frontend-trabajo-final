@@ -1,0 +1,126 @@
+/* ---------- Navegación ---------- */
+
+.navbar-lofi {
+    background: #1C252C;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-lofi .navbar-brand {
+    color: #E5EBEF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.navbar-lofi .navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-lofi .nav-link {
+    color: #E5EBEF;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar-lofi .nav-link:hover {
+    color: #83b6da;
+    transform: translateY(-2px);
+}
+
+#darkModeBtn {
+    border: none;
+    color: #E5EBEF;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+    color: #83b6da;
+}
+
+.navbar-lofi .navbar-toggler {
+    border: none;
+}
+
+.navbar-lofi .navbar-toggler-icon {
+    filter: invert(90%);
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    text-align: center;
+    padding: 10px;
+    background: #1C252C;
+}
+
+.hero-title {
+    font-size: 4rem;
+    color: #AFCBDF;
+    letter-spacing: 5px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #E5EBEF;
+    opacity: 0.85;
+}
+
+.hero-container {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-btn {
+    background: #AFCBDF14; 
+    border: 1px solid #AFCBDF40; 
+    color: #E5EBEF;
+    padding: 10px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #AFCBDF26;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background: #AFCBDF99;
+    color: #1C252C;
+    text-decoration: none;
+}
+
+
+/* ---------- Carrusel ---------- */
+
+.carousel-lofi {
+    max-width: 720px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+        0 0 35px #0091ff66,
+        0 0 60px #02294c40;  
+}
+
+
+/* ---------- Presentación ---------- */
+
+.presentacion-lofi {
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.presentacion-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
