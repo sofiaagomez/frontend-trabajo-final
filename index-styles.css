@@ -1,65 +1,72 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --font-main: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --bg-color: #f8f8f8;
+    --text-color: #333;
+
+    --nav-bg: #1C252C;
+    --nav-text: #E5EBEF;
+    --nav-link-hover: #83b6da;
+
+    --card-bg: #fff;
 }
 
 
 /* ---------- Navegación ---------- */
 
 .navbar-lofi {
-    background: #1C252C;
+    background: var(--nav-bg);
     padding: 0.8rem 1rem;
 }
 
 .navbar-lofi .navbar-brand {
-    color: #E5EBEF;
+    color: var(--nav-text);
     font-weight: 800;
     display: flex;
     align-items: center;
     letter-spacing: 2px;
 }
 
-.navbar-lofi .navbar-brand img {
+.navbar-brand img {
     height: 50px;
     margin-right: 10px;
 }
 
-.navbar-lofi .nav-link {
-    color: #E5EBEF;
-    margin: 0 8px;
+.nav-link {
+    color: var(--nav-text);
     font-size: 18px;
-    transition: 0.3s;
+    margin: 0 8px;
+    transition: 0.3s ease;
 }
 
-.navbar-lofi .nav-link:hover {
-    color: #83b6da;
+.nav-link:hover {
+    color: var(--nav-link-hover);
     transform: translateY(-2px);
 }
 
-.darkMode-container {
+#navCollapseBtn { 
+    border: none; 
+} 
+
+.navbar-toggler-icon { 
+    filter: invert(90%); 
+}
+
+.navbar-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
 #darkModeBtn {
-    border: none;
-    color: #E5EBEF;
+    color: var(--nav-text);
+    width: auto;
     margin-left: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 #darkModeBtn:hover {
-    color: #83b6da;
-}
-
-.navbar-lofi .navbar-toggler {
-    border: none;
-}
-
-.navbar-lofi .navbar-toggler-icon {
-    filter: invert(90%);
+    color: var(--nav-link-hover);
+    transform: translateY(-2px);
 }
 
 
@@ -140,16 +147,21 @@
 
 /* ---------- Cartas ---------- */
 
+.cards-container {
+    justify-content: center;
+    padding: 15px;
+}
+
 .cards-title {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 25px;
     letter-spacing: 1px;
 }
 
 .card-mood {
-    border-radius: 25px;
+    border-color: #1C252C;
+    border-radius: 30px;
     transition: 0.3s;
 }
 
@@ -166,6 +178,12 @@
     margin-top: 10px;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+}
+
 .title-mood {
     text-align: center;
     font-size: 1.6rem;
@@ -180,8 +198,7 @@
 
 .btn-container {
     display: flex;
-    margin-top: 15px;
-    flex-wrap: wrap;
+    margin-top: auto;
     justify-content: center;
 }
 
@@ -195,7 +212,6 @@
     transition: 0.3s;
     text-decoration: none;
 }
-
 
 /* ---------- Carta Alegría ---------- */
 

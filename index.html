@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
@@ -21,31 +21,36 @@
         <nav class="navbar navbar-expand-lg navbar-lofi">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="Imagenes/Logo.png" alt="Lofi Mood Logo" class="d-inline-block align-text-top"/>
-                        Lofi Moods
+                    <img src="Imagenes/Logo.png" alt="Lofi Mood Logo"/>Lofi Moods
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <button 
+                id="navCollapseBtn"
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation" 
+                >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto"> 
+                        <a class="nav-link" href="index.html">Inicio</a>
                         <a class="nav-link" href="#">Nosotros</a>
                         <a class="nav-link" href="#">Contacto</a>
                         
-                        <div class="darkMode-container">
-                            <button id="darkModeBtn" class="btn">
-                                <span class="material-symbols-outlined">contrast</span>
-                            </button> 
-                        </div>
+                        <button id="darkModeBtn" class="btn">
+                            <span class="material-symbols-outlined">contrast</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
-
+        
         <section class="hero">
             <h1 class="hero-title">Lofi Moods</h1>
             <h2 class="hero-subtitle">Te ayudamos a elegir música según cómo te sentís hoy.</h2>
@@ -85,22 +90,25 @@
 
         <section class="presentacion-lofi">
             <p class="presentacion-text">
-                Tus emociones cambian y no todos los días estudiamos con la misma energía. Por eso creamos Lofi Moods: playlists pensadas para adaptarse a tu mood, acompañarte mientras estudiás o resolvés ejercicios y ayudarte a encontrar el enfoque que necesitás.
+                Tus emociones cambian y no todos los días estudiamos con la misma energía. Por eso creamos Lofi Moods: playlists pensadas para 
+                adaptarse a tu mood, acompañarte mientras estudiás o resolvés ejercicios y ayudarte a encontrar el enfoque que necesitás.
             </p>
         </section>
 
         <section class="cards-lofi" id="playlists">
             <h2 class="cards-title">Playlists recomendadas según tu mood</h2>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+            <div class="row g-4 cards-container">
+                <div class="col-md-4">
                     <div class="card h-100 card-mood card-alegria">
                         <img src="Imagenes/1Card.png" class="img-mood" alt="Personaje Alegria estilo pixel">
 
                         <div class="card-body">
                             <h5 class="title-mood">Alegría</h5>
                             <p class="text-mood">
-                                Para esos días en los que el código compila a la primera, resolvés un bug que te perseguía hace horas (sí, faltaba un punto y coma) o cuando por fin entendés ese tema imposible que seguro entra en el parcial. Esta playlist acompaña esa claridad mental para aprovechar mejor tu día productivo, con energía renovada.
+                                Para esos días en los que el código compila a la primera, resolvés un bug que te perseguía hace horas (sí, 
+                                faltaba un punto y coma) o cuando por fin entendés ese tema imposible que seguro entra en el parcial. Esta 
+                                playlist acompaña esa claridad mental para aprovechar mejor tu día productivo, con energía renovada.
                             </p>
 
                             <div class="btn-container">
@@ -111,14 +119,16 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card h-100 card-mood card-tristeza">
                         <img src="Imagenes/2Card.png" class="img-mood" alt="Personaje Tristeza estilo pixel">
 
                         <div class="card-body">
                             <h5 class="title-mood">Tristeza</h5>
                             <p class="text-mood">
-                                Para esos días en los que te replanteás por qué estudiás esto, el código deja de funcionar, aparece un error nuevo cada vez que corregís otro o después de horas practicando ya ni sabés lo que estás escribiendo. Esta playlist te acompaña en esos momentos para que puedas ir a tu propio ritmo, sin estresarte tanto.
+                                Para esos días en los que te replanteás por qué estudiás esto, el código deja de funcionar, aparece un error 
+                                nuevo cada vez que corregís otro o después de horas practicando ya ni sabés lo que estás escribiendo. Esta 
+                                playlist te acompaña en esos momentos para que puedas ir a tu propio ritmo, sin estresarte tanto.
                             </p>
 
                             <div class="btn-container">
@@ -129,14 +139,16 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card h-100 card-mood card-furia">
                         <img src="Imagenes/3Card.png" class="img-mood" alt="Personaje Furia estilo pixel">
 
                         <div class="card-body">
                             <h5 class="title-mood">Furia</h5>
                             <p class="text-mood">
-                                Para esos días en los que el código no quiere funcionar, el IDE se traba, todos los test saltan en rojo, copiás una solución de StackOverflow o de alguna IA y tampoco anda. Esta playlist te acompaña en sentimiento porque ya decidiste que hoy resolvés todo o el teclado sufre las consecuencias.
+                                Para esos días en los que el código no quiere funcionar, el IDE se traba, todos los test saltan en rojo, copiás 
+                                una solución de StackOverflow o de alguna IA y tampoco anda. Esta playlist te acompaña en sentimiento porque ya 
+                                decidiste que hoy resolvés todo o el teclado sufre las consecuencias.
                             </p>
 
                             <div class="btn-container">
@@ -147,14 +159,16 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card h-100 card-mood card-desagrado">
                         <img src="Imagenes/4Card.png" class="img-mood" alt="Personaje Desagrado estilo pixel">
 
                         <div class="card-body">
                             <h5 class="title-mood">Desagrado</h5>
                             <p class="text-mood">
-                                Para esos días en los que abrís un proyecto viejo o lo que escribiste anoche con tres tazas de café encima porque te dormías y no entendés cómo funciona. Todo parece estar mal: el diseño, nombres de variables y sintaxis. Esta playlist te acompaña mientras te enfocás en transformar ese desastre en algo mínimamente digno.
+                                Para esos días en los que abrís un proyecto viejo o lo que escribiste anoche con tres tazas de café encima porque 
+                                te dormías y no entendés cómo funciona. Todo parece estar mal: el diseño, nombres de variables y sintaxis. Esta 
+                                playlist te acompaña mientras te enfocás en transformar ese desastre en algo mínimamente digno.
                             </p>
 
                             <div class="btn-container">
@@ -165,14 +179,16 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card h-100 card-mood card-temor">
                         <img src="Imagenes/5Card.png" class="img-mood" alt="Personaje Temor estilo pixel">
 
                         <div class="card-body">
                             <h5 class="title-mood">Temor</h5>
                             <p class="text-mood">
-                                Para esos días en los que tocás cada línea de código como si desactivaras una bomba, con miedo de romper todo, encima aparece un error nuevo que nunca viste o el proyecto tarda demasiado en cargar y entrás en pánico. Esta playlist te acompaña cuando avanzás muy lento, pero avanzás sin colapsar (por ahora).
+                                Para esos días en los que tocás cada línea de código como si desactivaras una bomba, con miedo de romper todo, 
+                                encima aparece un error nuevo que nunca viste o el proyecto tarda demasiado en cargar y entrás en pánico. Esta 
+                                playlist te acompaña cuando avanzás muy lento, pero avanzás sin colapsar (por ahora).
                             </p>
 
                             <div class="btn-container">
