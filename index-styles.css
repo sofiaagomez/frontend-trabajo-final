@@ -1,40 +1,40 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --bg-color: #f8f8f8;
-    --text-color: #333;
+    --text-main: #2c3338;
+    --bg-main: #f2f5f7;
 
-    --nav-bg: #1C252C;
-    --nav-text: #E5EBEF;
-    --nav-link-hover: #83b6da;
+    --card-border: #5e666cc8;
+    --card-hover: #91ccee;
 
-    --hero-bg: var(--nav-bg);
-    --hero-title: #AFCBDF;
-    --hero-subtitle: var(--nav-text);
-    --hero-btn-bg: #AFCBDF14;
-    --hero-btn-text: var(--nav-text);
-    --hero-btn-border: #AFCBDF40;
-    --hero-btn-hover-bg: #AFCBDF99;
-    --hero-btn-hover-text: var(--nav-bg);
+    --btn-bg: #ede8e8;
+}
 
-    --presentacion-text: var(--text-color);
+.dark-mode {
+    --text-main: #e2e8ec;
+    --bg-main: #131a1f;
 
-    --card-bg: #fff;
-    --card-border: var(--nav-bg);
-    --card-hoover: var(--nav-link-hover);
-    --card-btn-text: var(--nav-bg);
+    --card-border: #6d808c;
+    --card-hover: #4a6473;
+
+    --btn-bg: #2c3a43;
+}
+
+body {
+    color: var(--text-main);
+    background: var(--bg-main); 
 }
 
 
 /* ---------- Navegación ---------- */
 
 .navbar-lofi {
-    background: var(--nav-bg);
+    background: #1C252C;
     padding: 0.8rem 1rem;
 }
 
 .navbar-lofi .navbar-brand {
-    color: var(--nav-text);
+    color: #E5EBEF;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -47,14 +47,14 @@
 }
 
 .nav-link {
-    color: var(--nav-text);
+    color: #E5EBEF;
     font-size: 18px;
     margin: 0 8px;
     transition: 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--nav-link-hover);
+    color: #83b6da;
     transform: translateY(-2px);
 }
 
@@ -72,14 +72,14 @@
 }
 
 #darkModeBtn {
-    color: var(--nav-text);
+    color: #E5EBEF;
     width: auto;
     margin-left: 10px;
     transition: 0.3s ease;
 }
 
 #darkModeBtn:hover {
-    color: var(--nav-link-hover);
+    color: #83b6da;
     transform: translateY(-2px);
 }
 
@@ -87,7 +87,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
-    background: var(--hero-bg);
+    background: #1C252C;
     padding: 10px;
     text-align: center;
 }
@@ -98,25 +98,26 @@
 }
 
 .hero-title {
-    color: var(--hero-title);
+    color: #b9d8ec;
     font-size: 4rem;
     letter-spacing: 5px;
 }
 
 .hero-subtitle {
-    color: var(--hero-subtitle);
+    color: #E5EBEF;
     font-size: 1.5rem;
     opacity: 0.85;
 }
 
 .hero-btn {
-    background: var(--hero-btn-bg); 
-    color: var(--hero-btn-text);
-    border: 1px solid var(--hero-btn-border); 
+    background: #AFCBDF14; 
+    color: #E5EBEF;
+    border: 2px solid #b9d8ec55; 
     border-radius: 100px;
     padding: 10px;
     font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 2px;
     transition: 0.3s;
     box-shadow: 0 0 10px #AFCBDF26;
     text-decoration: none;
@@ -124,8 +125,8 @@
 }
 
 .hero-btn:hover {
-    background: var(--hero-btn-hover-bg);
-    color: var(--hero-btn-hover-text);
+    background: #b9d8ec;
+    color: #1C252C;
     text-decoration: none;
 }
 
@@ -133,9 +134,9 @@
 /* ---------- Carrusel ---------- */
 
 .carousel-lofi {
-    width: 100%;
+    width: 90%;
     max-width: 720px;
-    margin: 20px auto;
+    margin: 25px auto;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -154,14 +155,14 @@
 /* ---------- Presentación ---------- */
 
 .presentacion-lofi {
-    max-width: 850px;
+    max-width: 900px;
     margin: 5px auto;
-    padding: 2px 30px; 
-    text-align: center;
+    padding: 2px 30px;
 }
 
 .presentacion-text {
-    color: var(--presentacion-text);
+    color: var(--text-main);
+    text-align: center;
     font-size: 1.3rem;
     line-height: 1.5;
 }
@@ -186,15 +187,16 @@
 }
 
 .card-mood {
-    background: var(--card-bg);
-    border: 2px solid var(--card-border);
+    color: var(--text-main);
+    background: var(--bg-main);
+    border: 2.5px solid var(--card-border);
     border-radius: 30px;
     transition: 0.3s;
 }
 
 .card-mood:hover {
+    box-shadow: 0 0 20px var(--card-hover);
     transform: translateY(-5px);
-    box-shadow: 0 0 20px var(--card-hoover);
 }
 
 .img-mood {
@@ -229,9 +231,9 @@
 }
 
 .btn-mood {
-    background: #c1d3e033;
-    color: var(--card-btn-text);
-    border: 2.5px solid var(--card-border);
+    background: var(--btn-bg);
+    color: var(--text-main);
+    border: 3px solid ;
     border-radius: 50px;
     padding: 6px 14px;
     font-weight: 600;
@@ -240,6 +242,7 @@
 }
 
 .btn-mood:hover {
+    color: #0f1c22;
     transform: translateY(-2px);
 }
 
@@ -262,7 +265,7 @@
 /* ---------- Carta Tristeza ---------- */
 
 .card-tristeza .title-mood {
-    color: darkblue; 
+    color: royalblue; 
 }
 
 .btn-tristeza {
@@ -270,7 +273,7 @@
 }
 
 .btn-tristeza:hover {
-    background: #C8D8EA;
+    background: #a6c2e0;
 }
 
 
