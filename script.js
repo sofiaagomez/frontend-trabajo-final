@@ -5,9 +5,12 @@ darkModeBtn.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 
     const icon = darkModeBtn.querySelector("i");
+
     if (body.classList.contains("dark-mode")) {
-        icon.textContent = "light_mode";
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
     } else {
-        icon.textContent = "dark_mode";
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
     }
 });

@@ -12,7 +12,7 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
         <link rel="stylesheet" href="index-styles.css">
     </head>
@@ -42,9 +42,9 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                         <a class="nav-link" href="#">Nosotros</a>
                         <a class="nav-link" href="#">Contacto</a>
-                        
-                        <button id="darkModeBtn" class="btn" aria-label="Cambiar modo oscuro">
-                            <span class="material-symbols-outlined">contrast</span>
+
+                        <button id="darkModeBtn" aria-label="Cambiar a modo oscuro">
+                            <i class="fa-solid fa-moon"></i>
                         </button>
                     </div>
                 </div>
@@ -56,8 +56,15 @@
                 <h1 class="hero-title">Lofi Moods</h1>
                 <h2 class="hero-subtitle">Te ayudamos a elegir música según cómo te sentís hoy.</h2>
                 
-                <a href="#playlists" class="hero-btn">Ver playlists</a>
+                <a href="#playlists" class="hero-btn">Explorar moods</a>
             </div>
+        </section>
+
+        <section class="presentacion-lofi">
+            <p class="presentacion-text">
+                Tus emociones cambian y no todos los días estudiamos con la misma energía. Por eso creamos Lofi Moods: playlists pensadas para 
+                adaptarse a tu mood, acompañarte mientras estudiás o resolvés ejercicios y ayudarte a encontrar el enfoque que necesitás.
+            </p>
         </section>
 
         <section class="carousel-lofi">
@@ -88,13 +95,6 @@
             </div>
         </section>
 
-        <section class="presentacion-lofi">
-            <p class="presentacion-text">
-                Tus emociones cambian y no todos los días estudiamos con la misma energía. Por eso creamos Lofi Moods: playlists pensadas para 
-                adaptarse a tu mood, acompañarte mientras estudiás o resolvés ejercicios y ayudarte a encontrar el enfoque que necesitás.
-            </p>
-        </section>
-
         <section class="cards-lofi" id="playlists">
             <h2 class="cards-title">Playlists recomendadas según tu mood</h2>
 
@@ -108,7 +108,7 @@
                             <p class="text-mood">
                                 Para esos días en los que el código compila a la primera, resolvés un bug que te perseguía hace horas (sí, 
                                 faltaba un punto y coma) o cuando por fin entendés ese tema imposible que seguro entra en el parcial. Esta 
-                                playlist acompaña esa claridad mental para aprovechar mejor tu día productivo, con energía renovada.
+                                playlist acompaña esa claridad mental para aprovechar mejor tu día productivo.
                             </p>
 
                             <div class="btn-container">
@@ -201,6 +201,26 @@
             </div>
         </section>
 
-        <script src="index-script.js"></script>
+        <footer class="footer-lofi">
+            <div class="footer-content">
+                <p class="footer-message">Tu espacio tranquilo, siempre que lo necesites.</p>
+
+                <div class="footer-social">
+                    <a href="https://open.spotify.com/user/chilledcow" target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@LofiGirl" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <a href="#" class="footer-up">Volver arriba</a>
+
+                <p class="footer-bottom">&copy; 2025 Lofi Mood – Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
