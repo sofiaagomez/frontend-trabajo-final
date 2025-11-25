@@ -3,9 +3,9 @@
 :root {
     --nav-footer-text: #f6e6d5;
     --nav-footer-bg: #2c1f1a;
-    --nav-footer-hover: #d8bfa6;
+    --nav-footer-hover: #dab48e;
 
-    --dark-mode-hover: #007bff;
+    --dark-mode-hover: #d56509;
 }
 
 .dark-mode {
