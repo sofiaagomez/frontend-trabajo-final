@@ -1,0 +1,45 @@
+:root {
+    /* ---------- Nav - Footer ---------- */
+    
+    --nav-footer-bg: #2c1f1a;
+    --nav-footer-text: #f6e6d5;
+    --nav-footer-hover: #dab48e;
+
+    --dark-mode-hover: #d56509;
+
+    /* ---------- Secciones ---------- */
+    
+    --bg-main: #fffaf5;
+    --text-main: #42342d;
+    
+    --card-border: #d8bfa6;
+    --card-hover: #f1c9a9;
+    
+    --card-bg: #fffaf4;
+    --card-btn-bg: #fff;
+}
+
+
+.dark-mode {
+    /* ---------- Nav - Footer ---------- */
+
+    --dark-mode-hover: #d2ea00;
+
+    /* ---------- Secciones ---------- */
+    
+    --bg-main: #1a140f;
+    --text-main: #f3e5d8;
+    
+    --card-border: #8f6e55;
+    --card-hover: #c49a78;
+
+    --card-bg: #241c16;
+    --card-btn-bg: #2f221c;
+}
+
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

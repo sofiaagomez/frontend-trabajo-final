@@ -1,30 +1,3 @@
-/* ---------- Estilos Globales ---------- */
-
-:root {
-    --text-main: #42342d;
-    --bg-main: #f8efe6;
-
-    --card-border: #d7b59a;
-    --card-hover: #f1c9a9;
-    --card-btn-bg: #ffffff;
-}
-
-.dark-mode {
-    --text-main: #f3e5d8;
-    --bg-main: #1c1410;
-
-    --card-border: #8b6b52;
-    --card-hover: #c49a78;
-    --card-btn-bg: #433029;
-}
-
-body {
-    color: var(--text-main);
-    background: var(--bg-main); 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
 /* ---------- Hero ---------- */
 
 .hero {
@@ -120,7 +93,7 @@ body {
 
 .cards-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 1.3px;
     padding: 10px;
@@ -139,7 +112,7 @@ body {
 .card-mood {
     display: flex;
     flex-direction: column;
-    background: var(--bg-main);
+    background: var(--card-bg);
     color: var(--text-main);
     border: 2.5px solid var(--card-border);
     height: 100%;
@@ -169,13 +142,13 @@ body {
 
 .title-mood {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
 .text-mood {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
