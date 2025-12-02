@@ -14,16 +14,16 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-        <link rel="stylesheet" href="global-styles.css">
-        <link rel="stylesheet" href="nav-footer-styles.css">
-        <link rel="stylesheet" href="contacto-styles.css">
+        <link rel="stylesheet" href="css/global-styles.css">
+        <link rel="stylesheet" href="css/nav-footer-styles.css">
+        <link rel="stylesheet" href="css/contacto-styles.css">
     </head>
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-lofi">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="Imagenes/Logo.png" alt="Lofi Moods Logo"/>Lofi Moods
+                    <img src="assets/Logo.png" alt="Lofi Moods Logo"/>Lofi Moods
                 </a>
                 
                 <button 
@@ -53,16 +53,18 @@
             </div>
         </nav>
 
-        <section class="contacto-lofi">
-            <h1 class="contacto-title">Conectemos</h1>
-            <h3 class="contacto-subtitle">
-                Suscribite para enterarte de nuestras nuevas playlists creadas para cada mood.
-            </h3>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Conectemos</h1>
+                <h3 class="hero-subtitle">Suscribite para enterarte de nuestras nuevas playlists creadas para cada mood.</h3>
+            </div>
+        </section>
 
+        <section>
             <form action="" method="post" class="contacto-form">
 
                 <div class="form-group">
-                    <label for="nombre" class="form-label">Nombre y Apellido *</label>
+                    <label for="nombre" class="form-label">Nombre *</label>
                     <input 
                         type="text" 
                         class="form-control" 
@@ -166,6 +168,6 @@
             </div>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
